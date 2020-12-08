@@ -11,13 +11,14 @@ def nyc_pigeon_organizer(data)
           nyc_pigeons[name] = {}
         end
         if !nyc_pigeons[name][key]
-          !nyc_pigeons[name][key] = []
+          nyc_pigeons[name][key] = []
         end
-      nyc_pigeons[name][key].push(key2.to_s)
+        nyc_pigeons[name][key].push(key2.to_s)
+        #binding.pry
       end
     end
   end
-  
+  binding.pry
 end
 
 
